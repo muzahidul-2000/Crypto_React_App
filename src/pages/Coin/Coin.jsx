@@ -6,10 +6,13 @@ import { CoinContext } from '../../context/CoinContext';
 import LineChart from '../../components/LineChart/LineChart';
 
 function Coin() {
+  
   const {coinId}=useParams();
   const [coinData,setCoinData]=useState();
   const [historicalData,setHistoricalData]=useState();
+
   const {currency}=useContext(CoinContext);
+
   async function fetchCoinData(){
     const options = {
       method: 'GET',

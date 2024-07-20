@@ -1,6 +1,9 @@
 import { createContext, useEffect, useState } from "react";
-const apiKey = import.meta.env.VITE_API_KEY
+
+const apiKey = import.meta.env.VITE_API_KEY;
+
 export const CoinContext=createContext();
+
 function CoinContextProvider(props){
   const[allCoin,setAllCoin]=useState([]);
   const [currency,setCurrency]=useState({
@@ -19,9 +22,11 @@ function CoinContextProvider(props){
       .then(response =>setAllCoin(response))
       .catch(err => console.error(err));
   }
+
   useEffect(()=>{
     fetchAllCoin();
   },[currency])
+
   const contextValue={
     allCoin,currency,setCurrency
   }
