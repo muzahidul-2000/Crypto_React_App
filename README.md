@@ -1,6 +1,7 @@
 # React + Vite
 #PREVIEW
 ![preview](https://github.com/muzahidul-2000/Crypto_React_App/assets/174250155/f907ac98-c3e4-4769-95a1-83cbd9f0c9af)
+![bitcoin](https://github.com/user-attachments/assets/ffa2a255-3837-4289-b39f-e3fe4357ad39)
 
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
